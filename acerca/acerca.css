@@ -1,0 +1,65 @@
+/* Estilos específicos para la página Acerca de mí */
+
+.about-me {
+    max-width: 900px;
+    margin: 0 auto 3em auto;
+    padding: 0 1.5em;
+    line-height: 1.7;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.about-me h1 {
+    font-size: 2.6em;
+    margin-bottom: 0.2em;
+    color: #1a1a1a;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about-me p {
+    margin-bottom: 1.5em;
+}
+
+.about-me h2 {
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    font-size: 1.8em;
+    color: #2c3e50;
+    border-bottom: 3px solid #1abc9c;
+    padding-bottom: 0.3em;
+}
+
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 12px;
+    margin-bottom: 2em;
+}
+
+.skills-list li {
+    background: #1abc9c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(26,188,156,0.4);
+    transition: background 0.3s ease;
+}
+
+.skills-list li:hover {
+    background: #16a085;
+    cursor: default;
+}
+
+.about-me a {
+    color: #1abc9c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.about-me a:hover {
+    text-decoration: underline;
+}
