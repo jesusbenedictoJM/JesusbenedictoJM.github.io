@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/blog.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+        /* Ajustes para que las imágenes del carrusel tengan tamaño uniforme */
+        #blogCarousel .carousel-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body class="is-preload">
 
@@ -59,39 +68,83 @@
                     La práctica constante y la curiosidad son aliados imprescindibles. No tengas miedo de equivocarte, porque
                     esos errores son la mejor fuente de conocimiento.
                 </p>
-                
             </article>
 
-            <!-- Nueva sección Galería de imágenes -->
-            <section class="gallery my-5">
-                <h2>Galería de imágenes</h2>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fareaf5.es%2Fblog%2Flenguajes-de-programacion-que-son-y-para-que-se-utilizan&psig=AOvVaw03E_4EJQlQlWI07C7H5rIn&ust=1752361363998000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODhjPf0tY4DFQAAAAAdAAAAABAd" class="card-img-top" alt="Imagen 1" />
-                            <div class="card-body">
-                                <p class="card-text">Captura de pantalla de mi proyecto Net-Shop.</p>
+            <!-- Carrusel Bootstrap -->
+            <section class="my-5">
+                <h2></h2>
+                <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Net.jpeg" class="d-block w-100" alt="Captura de pantalla de mi proyecto Net-Shop" />
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.itmastersmag.com/wp-content/uploads/2021/01/shutterstock_1078387013-scaled.jpg" class="d-block w-100" alt="Esquema de arquitectura backend usando Spring Boot" />
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.goconqr.com/uploads/image_clipping/image/1720110/desktop_ea7a419a-34be-4457-b92b-7f08f1619d99.jpg" class="d-block w-100" alt="Diagrama de flujo para consumo de APIs REST" />
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="https://www.itmastersmag.com/wp-content/uploads/2021/01/shutterstock_1078387013-scaled.jpg" class="card-img-top" alt="Imagen 2" />
-                            <div class="card-body">
-                                <p class="card-text">Esquema de arquitectura backend usando Spring Boot.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="https://cdn.goconqr.com/uploads/image_clipping/image/1720110/desktop_ea7a419a-34be-4457-b92b-7f08f1619d99.jpg" class="card-img-top" alt="Imagen 3" />
-                            <div class="card-body">
-                                <p class="card-text">Diagrama de flujo para consumo de APIs REST.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
             </section>
+
+            <!-- Nuevo Artículo -->
+            <article class="mt-5">
+                <header>
+                    <h2>Cómo iniciar tu primer proyecto Full Stack sin morir en el intento</h2>
+                    <p class="meta">Publicado el 12 de julio de 2025</p>
+                </header>
+                <p>
+                    Iniciar un proyecto Full Stack por tu cuenta puede parecer abrumador, pero con una buena planificación y las herramientas adecuadas, es una experiencia sumamente enriquecedora. Aquí te comparto algunos consejos que me ayudaron a lanzar mi primer proyecto completo.
+                </p>
+                <h3>1. Define una idea clara</h3>
+                <p>
+                    No necesitas reinventar la rueda. Una tienda online, un blog personal o un sistema de tareas son excelentes puntos de partida. Lo importante es que el proyecto resuelva un problema específico y tenga un objetivo funcional.
+                </p>
+                <h3>2. Elige tu stack tecnológico</h3>
+                <p>
+                    Si ya dominas tecnologías como <strong>HTML, CSS, JavaScript, Spring Boot y MySQL</strong>, estás listo. Mantén el stack sencillo al inicio para enfocarte en aprender arquitectura y buenas prácticas.
+                </p>
+                <h3>3. Usa control de versiones</h3>
+                <p>
+                    Desde el primer commit, usa <strong>Git y GitHub</strong>. Te permite controlar tu progreso, revertir errores y, lo más importante, mostrar tu trabajo profesionalmente.
+                </p>
+                <h3>4. Construye paso a paso</h3>
+                <p>
+                    Divide el desarrollo en etapas pequeñas: diseño, autenticación, conexión con la base de datos, funciones CRUD. Prioriza que funcione antes de embellecerlo.
+                </p>
+                <h3>5. Documenta tu código</h3>
+                <p>
+                    Escribir comentarios útiles y mantener un <code>README.md</code> claro te ayudará a ti y a quienes revisen tu repositorio. También puedes agregar capturas y GIFs del proyecto funcionando.
+                </p>
+                <h3>6. Publica y recibe retroalimentación</h3>
+                <p>
+                    Sube tu proyecto a GitHub, compártelo en LinkedIn o foros de programación. Las críticas constructivas te ayudarán a crecer mucho más rápido.
+                </p>
+                <blockquote>
+                    <p><strong>“No esperes a estar listo para comenzar, empieza y mejorarás en el camino.”</strong></p>
+                </blockquote>
+                <p>
+                    ¡Atrévete a construir tu primer Full Stack! No será perfecto, pero sí será tuyo, y eso es lo más valioso.
+                </p>
+            </article>
 
         </section>
     </div>
@@ -121,9 +174,10 @@
     <div id="copyright">
         <ul><li>&copy; Benedicto Jiménez</li><li>Diseño: <a href="https://html5up.net">HTML5 UP</a></li></ul>
     </div>
-   <footer>
-                    <p><em>Benedicto Jiménez</em></p>
-                </footer>
+    <footer>
+        <p><em>Benedicto Jiménez</em></p>
+    </footer>
+
 </div>
 
 <!-- Scripts -->
