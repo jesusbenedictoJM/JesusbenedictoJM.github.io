@@ -1,185 +1,197 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portafolio - Benedicto Jiménez</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio - Benedicto Jiménez</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 
-    <!-- Font Awesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Font Awesome para iconos -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 
-    <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="css/estilos.css" />
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/estilos.css" />
 </head>
 <body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio">Benedicto</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#acerca">Acerca de mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cv">Currículum</a></li>
+            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="#inicio">Benedicto</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#acerca">Acerca de mí</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#cv">Currículum</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+  <!-- Contenido principal -->
+  <main>
     <!-- Inicio -->
     <section id="inicio" class="container py-5">
-        <div class="row align-items-center">
-            <!-- Imagen -->
-            <div class="col-md-6 text-center mb-4 mb-md-0">
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQEF3e6wwwG23g/profile-displayphoto-crop_800_800/B4DZeBbB8vH4AM-/0/1750223040886?e=1757548800&v=beta&t=TvIqI8mxRR8mi1LvEM4aatBWqktZyFWuSMi7GjCQkFc" 
-                     alt="Foto de Benedicto" 
-                     class="img-fluid rounded shadow" 
-                     style="max-width: 300px;">
-            </div>
-
-            <!-- Texto -->
-            <div class="col-md-6">
-                <h1 class="mb-3">Hola, soy <strong>Benedicto Jiménez</strong></h1>
-                <p class="lead" style="text-align: justify;">
-                    Soy un desarrollador Full Stack apasionado por crear soluciones digitales funcionales, estéticas y escalables. 
-                    A lo largo de mi formación y experiencia, he trabajado en proyectos que combinan tecnologías modernas del frontend y backend, 
-                    resolviendo problemas reales con código limpio y buenas prácticas. Este portafolio es una muestra de mi trabajo, dedicación y crecimiento profesional. 
-                    <strong>¡Gracias por visitarlo!</strong>
-                </p>
-                <p style="text-align: justify;">
-                    <strong>Contacto:</strong> jimenezbenedicto7@gmail.com<br />
-                    <strong>GitHub:</strong> <a href="https://github.com/Benedicto" target="_blank" rel="noopener noreferrer">github.com/Benedicto</a>
-                </p>
-            </div>
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D4D03AQEF3e6wwwG23g/profile-displayphoto-crop_800_800/B4DZeBbB8vH4AM-/0/1750223040886?e=1757548800&v=beta&t=TvIqI8mxRR8mi1LvEM4aatBWqktZyFWuSMi7GjCQkFc"
+            alt="Foto de Benedicto"
+            class="img-fluid rounded shadow"
+            style="max-width: 300px;"
+          />
         </div>
+        <div class="col-md-6">
+          <h1 class="mb-3">Hola, soy <strong>Benedicto Jiménez</strong></h1>
+          <p class="lead">
+            Soy un desarrollador Full Stack apasionado por crear soluciones digitales funcionales, estéticas y escalables. Este portafolio es una muestra de mi trabajo, dedicación y crecimiento profesional. 
+            <strong>¡Gracias por visitarlo!</strong>
+          </p>
+          <p>
+            <strong>Contacto:</strong> jimenezbenedicto7@gmail.com<br />
+            <strong>GitHub:</strong> 
+            <a href="https://github.com/Benedicto" target="_blank" rel="noopener noreferrer">github.com/Benedicto</a>
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Portafolio -->
     <section id="portafolio" class="container py-5">
-        <h2 class="mb-4">Proyectos</h2>
-        <div class="d-flex flex-wrap justify-content-center gap-4">
-            <!-- Proyecto 1 -->
-            <div class="card">
-                <img src="https://ca-times.brightspotcdn.com/dims4/default/821ddbe/2147483647/strip/true/crop/6122x4081+0+1/resize/1440x960!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F9b%2F7e%2F1f266c44478083aee69c36942a1d%2F1351750-fi-sneaker-buyer-coolkicks-jlc-16180-017.jpg" alt="Net Shopping Logo" />
-                <h2>E-commerce</h2>
-                <p>
-                    Se optimizaron funciones de validación en JavaScript, mejorando la eficiencia de formularios en un 60 % mediante HTML5 y Bootstrap. Se colaboró en el diseño de la base de datos utilizando MySQL Workbench y en el desarrollo de controladores con Spring Boot para procesos de autenticación y gestión de productos.
-                </p>
-                <div class="role">Rol: Desarrollador Frontend &amp; Backend</div>
-                <div class="tech-icons">
-                    <span class="icon-js">JS</span>
-                    <i class="fa-brands fa-java icon-java"></i>
-                    <i class="fa-brands fa-html5 icon-html"></i>
-                    <i class="fa-brands fa-css3-alt icon-css"></i>
-                    <i class="fa-solid fa-leaf icon-spring"></i>
-                </div>
-            </div>
-
-            <!-- Proyecto 2 -->
-            <div class="card">
-                <img src="https://cdn-7.motorsport.com/images/amp/6xERpn40/s1000/mercedes-f1-w16.jpg" alt="F1 Hackaton" style="width:300px;height:120px;" />
-                <h2>Hackaton</h2>
-                <p>
-                    Elaboración de una Página web dedicada a la venta de productos relacionados al deporte de la Fórmula 1 con un enfoque de equipos de escuderías, cada aportación genera una experiencia única, representando la escudería del equipo McLaren con productos destacados.
-                </p>
-                <div class="role">Rol: Desarrollador Frontend &amp; Backend</div>
-                <div class="tech-icons">
-                    <span class="icon-js">JS</span>
-                    <i class="fa-brands fa-html5 icon-html"></i>
-                    <i class="fa-brands fa-css3-alt icon-css"></i>
-                    <i class="fa-solid fa-leaf icon-spring"></i>
-                </div>
-            </div>
+      <h2 class="mb-4">Proyectos</h2>
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <!-- Proyecto 1 -->
+        <div class="card">
+          <img src="https://ca-times.brightspotcdn.com/dims4/default/821ddbe/2147483647/strip/true/crop/6122x4081+0+1/resize/1440x960!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F9b%2F7e%2F1f266c44478083aee69c36942a1d%2F1351750-fi-sneaker-buyer-coolkicks-jlc-16180-017.jpg" alt="Net Shopping Logo" />
+          <h2>E-commerce</h2>
+          <p>
+            Optimización de formularios en JS, diseño de base de datos en MySQL Workbench y desarrollo de controladores Spring Boot para autenticación y gestión de productos.
+          </p>
+          <div class="role">Rol: Desarrollador Frontend & Backend</div>
+          <div class="tech-icons">
+            <span class="icon-js">JS</span>
+            <i class="fa-brands fa-java icon-java"></i>
+            <i class="fa-brands fa-html5 icon-html"></i>
+            <i class="fa-brands fa-css3-alt icon-css"></i>
+            <i class="fa-solid fa-leaf icon-spring"></i>
+          </div>
         </div>
+
+        <!-- Proyecto 2 -->
+        <div class="card">
+          <img src="https://cdn-7.motorsport.com/images/amp/6xERpn40/s1000/mercedes-f1-w16.jpg" alt="F1 Hackaton" />
+          <h2>Hackaton F1</h2>
+          <p>
+            Página web dedicada a venta de productos F1, representando la escudería McLaren con diseño atractivo y enfoque comercial.
+          </p>
+          <div class="role">Rol: Desarrollador Frontend & Backend</div>
+          <div class="tech-icons">
+            <span class="icon-js">JS</span>
+            <i class="fa-brands fa-html5 icon-html"></i>
+            <i class="fa-brands fa-css3-alt icon-css"></i>
+            <i class="fa-solid fa-leaf icon-spring"></i>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Acerca de mí -->
     <section id="acerca" class="container py-5">
-        <h2>Acerca de mí</h2>
-        <p style="text-align: justify;">
-            Soy un apasionado del desarrollo web. He trabajado con tecnologías como HTML, CSS, JavaScript, Spring Boot y MySQL.
-            Me interesa seguir creciendo como profesional y enfrentar nuevos desafíos tecnológicos.
-        </p>
+      <h2>Acerca de mí</h2>
+      <p>
+        Soy un desarrollador web apasionado con experiencia en HTML, CSS, JavaScript, Spring Boot y MySQL. Disfruto aprender continuamente, afrontar retos tecnológicos y colaborar en proyectos de alto impacto.
+      </p>
     </section>
 
     <!-- Currículum -->
     <section id="cv" class="container py-5">
-        <h2>Currículum Vitae</h2>
+      <h2>Currículum Vitae</h2>
+      <h3>Logros Académicos</h3>
+      <ul>
+        <li>Generation México - Java Full-Stack Developer (May 2025 – Ago 2025)</li>
+        <li>ITS de Tierra Blanca - Ingeniería en Sistemas (Ago 2017 – Ene 2022)</li>
+      </ul>
 
-        <h3>Logros Académicos</h3>
-        <ul>
-            <li>Generation México - Java Full-Stack Developer (May 2025 – Ago 2025)</li>
-            <li>Tecnológico Superior de Tierra Blanca - Ingeniería en Sistemas Computacionales (Ago 2017 – Ene 2022)</li>
-        </ul>
+      <h3>Experiencia Profesional</h3>
+      <ul>
+        <li>Softek - Soporte y Desarrollo de BD (Dic 2023 – May 2024)</li>
+        <li>Uniti Consulting - Desarrollador (Ene 2022 – Nov 2023)</li>
+      </ul>
 
-        <h3>Experiencia Profesional</h3>
-        <ul>
-            <li>Softek - Soporte y Desarrollo de Bases de Datos (Dic 2023 – May 2024)</li>
-            <li>Uniti Consulting - Desarrollador (Ene 2022 – Nov 2023)</li>
-        </ul>
+      <h3>Habilidades Técnicas</h3>
+      <p>Java, JavaScript, Python, MySQL, PHP, Oracle, Spring Boot, Maven, DAO, GitHub, Excel, Apache Tomcat</p>
 
-        <h3>Habilidades Técnicas</h3>
-        <p>Java, JavaScript, Python, MySQL, PHP, SQL Server, Oracle, Spring Framework, Maven, DAO, DTO, Git, GitHub, Excel, Apache Tomcat</p>
-
-        <h3>Habilidades Blandas</h3>
-        <p>Responsabilidad, Trabajo en equipo, Proactividad, Gestión del tiempo, Ética profesional, Honestidad</p>
+      <h3>Habilidades Blandas</h3>
+      <p>Trabajo en equipo, Ética, Proactividad, Gestión del tiempo, Responsabilidad</p>
     </section>
 
     <!-- Blog -->
-<section id="blog" class="container py-5">
-    <h2>Blog</h2>
-    <article class="entrada p-4 rounded shadow-sm mb-4">
+    <section id="blog" class="container py-5">
+      <h2>Blog</h2>
+      <article class="entrada p-4 rounded shadow-sm mb-4">
         <h3>Reflexión de mi camino como desarrollador Java</h3>
         <p>
-            A lo largo de mi formación como desarrollador Java, he aprendido no solo a manejar la sintaxis y las herramientas, sino también a comprender la importancia de escribir código limpio y mantenible. Cada proyecto me ha enseñado a enfrentar retos técnicos y a colaborar eficazmente en equipo.
+          A lo largo de mi formación, aprendí no solo herramientas y frameworks, sino a escribir código limpio, a colaborar con equipos y mejorar día con día como profesional.
         </p>
         <p>
-            Sin embargo, sé que hay áreas en las que debo mejorar, como profundizar mis conocimientos en arquitectura de software, optimización de rendimiento y metodologías ágiles. Además, quiero fortalecer mis habilidades en testing automatizado y DevOps para entregar software con mayor calidad y rapidez.
+          A futuro, deseo dominar arquitecturas avanzadas, DevOps y testing automatizado. Me entusiasma crecer como líder técnico y construir soluciones con impacto real.
         </p>
-        <p>
-            Mis metas a corto plazo incluyen completar proyectos prácticos que incorporen patrones de diseño y pruebas unitarias, así como participar activamente en revisiones de código y sesiones de mentoring. A largo plazo, aspiro a liderar equipos de desarrollo y contribuir a proyectos de gran escala que tengan un impacto real en los usuarios.
-        </p>
-        <p>
-            Este camino es un proceso continuo de aprendizaje y adaptación, y estoy comprometido a crecer profesionalmente mientras aporto valor con cada línea de código.
-        </p>
-    </article>
-</section>
+      </article>
+    </section>
+  </main>
 
+  <!-- Footer -->
+  <footer id="footer" class="bg-dark text-center text-light py-4">
+    <div class="container">
+      <ul class="list-inline mb-3">
+        <li class="list-inline-item mx-3">
+          <a href="mailto:jimenezbenedicto7@gmail.com" class="text-light fs-4">
+            <i class="fa-solid fa-envelope"></i><span class="visually-hidden">Correo</span>
+          </a>
+        </li>
+        <li class="list-inline-item mx-3">
+          <a href="https://github.com/jesusbenedictoJM" target="_blank" rel="noopener noreferrer" class="text-light fs-4">
+            <i class="fa-brands fa-github"></i><span class="visually-hidden">GitHub</span>
+          </a>
+        </li>
+        <li class="list-inline-item mx-3">
+          <a href="https://www.linkedin.com/in/jesús-bene/" target="_blank" rel="noopener noreferrer" class="text-light fs-4">
+            <i class="fa-brands fa-linkedin"></i><span class="visually-hidden">LinkedIn</span>
+          </a>
+        </li>
+      </ul>
+      <p class="mb-0">&copy; 2025 Benedicto Jiménez</p>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer id="footer" class="bg-dark text-center text-light py-4">
-        <div class="container">
-            <ul class="list-inline mb-3">
-                <li class="list-inline-item mx-3">
-                    <a href="mailto:jimenezbenedicto7@gmail.com" class="text-light fs-4"><i class="fa-solid fa-envelope"></i><span class="visually-hidden">Correo</span></a>
-                </li>
-                <li class="list-inline-item mx-3">
-                    <a href="https://github.com/jesusbenedictoJM" target="_blank" rel="noopener noreferrer" class="text-light fs-4"><i class="fa-brands fa-github"></i><span class="visually-hidden">GitHub</span></a>
-                </li>
-                <li class="list-inline-item mx-3">
-                    <a href="https://www.linkedin.com/in/jesús-bene/" target="_blank" rel="noopener noreferrer" class="text-light fs-4"><i class="fa-brands fa-linkedin"></i><span class="visually-hidden">LinkedIn</span></a>
-                </li>
-            </ul>
-            <p class="mb-0">&copy; 2025 Benedicto Jiménez</p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Tu script personalizado -->
-    <script src="js/script.js"></script>
-
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script personalizado -->
+  <script src="js/script.js"></script>
 </body>
 </html>

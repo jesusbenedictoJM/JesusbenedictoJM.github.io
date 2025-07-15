@@ -1,16 +1,24 @@
 /* Reset básico */
-body, h1, h2, p, ul {
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 /* Fuente general y scroll suave */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Degradado azul agradable */
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: #f0f4f8;
     scroll-behavior: smooth;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
 }
 
 /* Navbar */
@@ -21,6 +29,7 @@ body {
     top: 0;
     z-index: 999;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
 }
 
 .navbar a {
@@ -31,30 +40,50 @@ body {
 }
 
 .navbar a:hover {
-    color: #ffd700; /* Amarillo dorado */
+    color: #ffd700;
     text-decoration: underline;
 }
 
 /* Secciones */
-.seccion {
+.seccion, section {
     padding: 4rem 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 /* Títulos */
-h1, h2 {
+h1, h2, h3 {
     color: #f0f4f8;
     margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
-/* Container para proyectos y cards */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+/* Container para tarjetas */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-/* Cards de proyectos */
+/* Cards */
 .card {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
@@ -67,24 +96,28 @@ h1, h2 {
     align-items: flex-start;
     color: #f0f4f8;
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease both;
 }
 
 .card:hover {
     transform: translateY(-8px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.5);
 }
 
 .card img {
-    width: 300px;
-    height: 180px;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
     object-fit: cover;
     margin-bottom: 1.5rem;
     border-radius: 12px;
     align-self: center;
 }
 
+/* Textos de tarjeta */
 .card h2 {
-    font-size: 2em;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
@@ -101,13 +134,13 @@ h1, h2 {
     color: #ffd700;
 }
 
+/* Tech icons */
 .tech-icons {
     display: flex;
     gap: 1.25rem;
     margin-top: auto;
 }
 
-/* Tech icons etiquetas */
 .icon-js {
     background: #fff200;
     color: #000;
@@ -139,7 +172,7 @@ h1, h2 {
     font-size: 2em;
 }
 
-/* Blog entrada */
+/* Blog */
 .entrada {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 1.5rem;
@@ -147,19 +180,22 @@ h1, h2 {
     border-radius: 8px;
     color: #f0f4f8;
     margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease both;
 }
 
+.entrada p {
+    text-align: justify;
+}
 
 /* Footer */
 footer#footer {
     background-color: #1b365d;
     color: #f0f4f8;
-    padding: 1.5rem 2rem;
+    padding: 2rem 2rem 1rem;
     text-align: center;
 }
 
 footer#footer ul.icons {
-    list-style: none;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -178,32 +214,39 @@ footer#footer ul.icons li a:hover {
 }
 
 footer#footer ul.copyright {
-    list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Responsividad básica */
+/* Botón flotante opcional (puedes activarlo si lo deseas)
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffd700;
+    color: #1b365d;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    font-size: 1.5rem;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+.floating-btn:hover {
+    background: #ffc107;
+}
+*/
+
+/* Responsividad */
 @media (max-width: 768px) {
     .container {
         padding: 0 1rem;
     }
     .card {
         max-width: 100%;
-        width: 100%;
     }
-}
-html, body {
-    height: 100%;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-main {
-    flex-grow: 1;
-}
-.entrada p {
-    text-align: justify;
 }
