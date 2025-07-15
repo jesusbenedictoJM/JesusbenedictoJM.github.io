@@ -217,8 +217,11 @@ footer#footer ul.copyright {
     padding: 0;
     margin: 0;
 }
+.col-md-6 {
+  text-align: justify;
+}
 
-/* Botón flotante opcional (puedes activarlo si lo deseas)
+/*Botón flotante opcional (puedes activarlo si lo deseas)*/
 .floating-btn {
     position: fixed;
     bottom: 20px;
@@ -239,7 +242,7 @@ footer#footer ul.copyright {
 .floating-btn:hover {
     background: #ffc107;
 }
-*/
+
 
 /* Responsividad */
 @media (max-width: 768px) {
