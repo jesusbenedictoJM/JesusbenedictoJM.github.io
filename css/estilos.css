@@ -8,8 +8,8 @@ body, h1, h2, h3, p, ul, li {
 /* Fuente general y scroll suave */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #ffffff;  /* fondo blanco */
-    color: #000000;       /* texto negro */
+    background: #ffffff;
+    color: #000000;
     scroll-behavior: smooth;
     line-height: 1.6;
     display: flex;
@@ -23,7 +23,7 @@ main {
 
 /* Navbar */
 .navbar {
-    background-color: #ffffff; /* fondo blanco */
+    background-color: #ffffff;
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
@@ -33,22 +33,22 @@ main {
 }
 
 .navbar a {
-    color: #f1f3fa; /* azul */
+    color: #f1f3fa;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #2563eb; /* azul claro */
+    color: #2563eb;
     text-decoration: underline;
 }
 
 /* Secciones */
 .seccion, section {
     padding: 4rem 2rem;
-    background: #ffffff;  /* fondo blanco */
-    color: #000000;       /* texto negro */
+    background: #ffffff;
+    color: #000000;
     margin: 1.5rem 0;
     border: none;
     border-radius: 0;
@@ -62,24 +62,16 @@ main {
 
 /* Títulos */
 h1, h2, h3 {
-    color: #1e40af; /* azul */
+    color: #1e40af;
     margin-bottom: 1rem;
     font-weight: 800;
     letter-spacing: 0.4px;
     text-shadow: none;
 }
 
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.4rem;
-}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.4rem; }
 
 /* Container para tarjetas */
 .container {
@@ -90,7 +82,7 @@ h3 {
 
 /* Cards */
 .card {
-    background: #ffffff; /* fondo blanco */
+    background: #ffffff;
     border-radius: 16px;
     padding: 2rem;
     width: 100%;
@@ -99,7 +91,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: #000000; /* texto negro */
+    color: #000000;
     box-shadow: 0 6px 14px rgba(0,0,0,0.12);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeInUp 1s ease both;
@@ -121,24 +113,23 @@ h3 {
     align-self: center;
 }
 
-/* Textos de tarjeta */
 .card h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #1e40af; /* títulos en azul */
+    color: #1e40af;
 }
 
 .card p {
     font-size: 1.1em;
     margin-bottom: 1.5rem;
     line-height: 1.5;
-    color: #000000; /* texto negro */
+    color: #000000;
 }
 
 .card .role {
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #1e40af; /* azul */
+    color: #1e40af;
 }
 
 /* Tech icons */
@@ -151,7 +142,6 @@ h3 {
     flex-wrap: wrap;
 }
 
-/* Mantener colores originales para destacar */
 .icon-js {
     background: #fff200;
     color: #000;
@@ -163,56 +153,33 @@ h3 {
     display: inline-block;
 }
 
-.icon-java {
-    color: #5382a1;
-    font-size: 2em;
-}
-
-.icon-html {
-    color: #e44d26;
-    font-size: 2em;
-}
-
-.icon-css {
-    color: #2965f1;
-    font-size: 2em;
-}
-
-.icon-spring {
-    color: #61dafb;
-    font-size: 2em;
-}
-
-.icon-php {
-    color: #8892be;
-    font-size: 2em;
-}
-
-.icon-wordpress {
-    color: #21759b;
-    font-size: 2em;
-}
+.icon-java { color: #5382a1; font-size: 2em; }
+.icon-html { color: #e44d26; font-size: 2em; }
+.icon-css { color: #2965f1; font-size: 2em; }
+.icon-spring { color: #61dafb; font-size: 2em; }
+.icon-php { color: #8892be; font-size: 2em; }
+.icon-wordpress { color: #21759b; font-size: 2em; }
 
 /* Blog */
 .entrada {
-    background-color: #ffffff; /* fondo blanco */
+    background-color: #ffffff;
     padding: 1.5rem;
-    border-left: 5px solid #1e40af; /* borde azul */
+    border-left: 5px solid #1e40af;
     border-radius: 8px;
-    color: #000000; /* texto negro */
+    color: #000000;
     margin-bottom: 2rem;
     animation: fadeInUp 0.8s ease both;
 }
 
 .entrada p {
     text-align: justify;
-    color: #000000; /* texto negro */
+    color: #000000;
 }
 
 /* Footer */
 footer#footer {
-    background-color: #ffffff; /* fondo blanco */
-    color: #000000; /* texto negro */
+    background-color: #ffffff;
+    color: #000000;
     padding: 2rem 2rem 1rem;
     text-align: center;
 }
@@ -226,13 +193,13 @@ footer#footer ul.icons {
 }
 
 footer#footer ul.icons li a {
-    color: #1e40af; /* azul */
+    color: #1e40af;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 footer#footer ul.icons li a:hover {
-    color: #2563eb; /* azul claro */
+    color: #2563eb;
 }
 
 footer#footer ul.copyright {
@@ -249,8 +216,8 @@ footer#footer ul.copyright {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #1e40af; /* azul */
-    color: #ffffff;       /* texto blanco para contraste */
+    background: #1e40af;
+    color: #ffffff;
     border-radius: 50%;
     width: 55px;
     height: 55px;
@@ -264,7 +231,7 @@ footer#footer ul.copyright {
 }
 
 .floating-btn:hover {
-    background: #2563eb; /* azul claro */
+    background: #2563eb;
 }
 
 /* Responsividad */
@@ -290,7 +257,7 @@ footer#footer ul.copyright {
 .card {
     max-width: 500px;
     width: 100%;
-    background: #ffffff; /* fondo blanco */
+    background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     padding: 20px;
@@ -312,24 +279,25 @@ footer#footer ul.copyright {
 .card h2 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color: #1e40af; /* azul */
+    color: #1e40af;
 }
 
 .card p {
     font-size: 0.95rem;
-    color: #000000; /* negro */
+    color: #000000;
 }
 
 .role {
     font-weight: bold;
     margin: 10px 0;
-    color: #1e40af; /* azul */
+    color: #1e40af;
 }
 
 section {
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
+
 /* Estilos para modo noche */
 body.dark-mode {
     background: #121212;
@@ -352,7 +320,7 @@ body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode .card h2,
 body.dark-mode .role {
-    color: #90caf9; /* azul claro para títulos en modo oscuro */
+    color: #90caf9;
 }
 
 body.dark-mode .navbar a,
@@ -373,6 +341,14 @@ body.dark-mode .floating-btn {
 body.dark-mode .floating-btn:hover {
     background: #64b5f6;
 }
+
 body.dark-mode .entrada p {
-    color: #e0e0e0; /* color claro para el texto del blog */
+    color: #e0e0e0;
+}
+
+/* ✅ Corrección aplicada */
+body.dark-mode .card p,
+body.dark-mode .card h2,
+body.dark-mode .card .role {
+    color: #e0e0e0;
 }
