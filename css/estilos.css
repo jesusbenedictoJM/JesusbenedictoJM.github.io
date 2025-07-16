@@ -8,8 +8,8 @@ body, h1, h2, h3, p, ul, li {
 /* Fuente general y scroll suave */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: #f0f4f8;
+    background: #ffffff;  /* fondo blanco */
+    color: #000000;       /* texto negro */
     scroll-behavior: smooth;
     line-height: 1.6;
     display: flex;
@@ -23,34 +23,38 @@ main {
 
 /* Navbar */
 .navbar {
-    background-color: #1b365d;
+    background-color: #ffffff; /* fondo blanco */
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 999;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 5px rgba(201, 173, 173, 0.1);
     transition: background-color 0.3s ease;
 }
 
 .navbar a {
-    color: #f0f4f8;
+    color: #f1f3fa; /* azul */
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #ffd700;
+    color: #2563eb; /* azul claro */
     text-decoration: underline;
 }
 
 /* Secciones */
 .seccion, section {
     padding: 4rem 2rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    animation: fadeInUp 0.8s ease both;
+    background: #ffffff;  /* fondo blanco */
+    color: #000000;       /* texto negro */
+    margin: 1.5rem 0;
+    border: none;
+    border-radius: 0;
 }
 
+/* Animación */
 @keyframes fadeInUp {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
@@ -58,10 +62,11 @@ main {
 
 /* Títulos */
 h1, h2, h3 {
-    color: #f0f4f8;
+    color: #1e40af; /* azul */
     margin-bottom: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    text-shadow: none;
 }
 
 h1 {
@@ -85,7 +90,7 @@ h3 {
 
 /* Cards */
 .card {
-    background: rgba(255, 255, 255, 0.1);
+    background: #ffffff; /* fondo blanco */
     border-radius: 16px;
     padding: 2rem;
     width: 100%;
@@ -94,15 +99,16 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: #f0f4f8;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    color: #000000; /* texto negro */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeInUp 1s ease both;
+    text-align: left;
 }
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 24px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.2);
 }
 
 .card img {
@@ -119,28 +125,33 @@ h3 {
 .card h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    color: #1e40af; /* títulos en azul */
 }
 
 .card p {
     font-size: 1.1em;
     margin-bottom: 1.5rem;
     line-height: 1.5;
-    color: #e0e7ff;
+    color: #000000; /* texto negro */
 }
 
 .card .role {
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #ffd700;
+    color: #1e40af; /* azul */
 }
 
 /* Tech icons */
 .tech-icons {
     display: flex;
     gap: 1.25rem;
-    margin-top: auto;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+/* Mantener colores originales para destacar */
 .icon-js {
     background: #fff200;
     color: #000;
@@ -172,25 +183,36 @@ h3 {
     font-size: 2em;
 }
 
+.icon-php {
+    color: #8892be;
+    font-size: 2em;
+}
+
+.icon-wordpress {
+    color: #21759b;
+    font-size: 2em;
+}
+
 /* Blog */
 .entrada {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ffffff; /* fondo blanco */
     padding: 1.5rem;
-    border-left: 5px solid #ffd700;
+    border-left: 5px solid #1e40af; /* borde azul */
     border-radius: 8px;
-    color: #f0f4f8;
+    color: #000000; /* texto negro */
     margin-bottom: 2rem;
     animation: fadeInUp 0.8s ease both;
 }
 
 .entrada p {
     text-align: justify;
+    color: #000000; /* texto negro */
 }
 
 /* Footer */
 footer#footer {
-    background-color: #1b365d;
-    color: #f0f4f8;
+    background-color: #ffffff; /* fondo blanco */
+    color: #000000; /* texto negro */
     padding: 2rem 2rem 1rem;
     text-align: center;
 }
@@ -204,45 +226,46 @@ footer#footer ul.icons {
 }
 
 footer#footer ul.icons li a {
-    color: #f0f4f8;
+    color: #1e40af; /* azul */
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 footer#footer ul.icons li a:hover {
-    color: #ffd700;
+    color: #2563eb; /* azul claro */
 }
 
 footer#footer ul.copyright {
     padding: 0;
     margin: 0;
 }
+
 .col-md-6 {
-  text-align: justify;
+    text-align: justify;
 }
 
-/*Botón flotante opcional (puedes activarlo si lo deseas)*/
+/* Botón flotante opcional */
 .floating-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #ffd700;
-    color: #1b365d;
+    background: #1e40af; /* azul */
+    color: #ffffff;       /* texto blanco para contraste */
     border-radius: 50%;
     width: 55px;
     height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     font-size: 1.5rem;
     z-index: 1000;
     transition: background 0.3s ease;
 }
-.floating-btn:hover {
-    background: #ffc107;
-}
 
+.floating-btn:hover {
+    background: #2563eb; /* azul claro */
+}
 
 /* Responsividad */
 @media (max-width: 768px) {
@@ -252,4 +275,104 @@ footer#footer ul.copyright {
     .card {
         max-width: 100%;
     }
+}
+
+/* Proyecto grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 30px;
+    justify-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    max-width: 500px;
+    width: 100%;
+    background: #ffffff; /* fondo blanco */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #1e40af; /* azul */
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #000000; /* negro */
+}
+
+.role {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #1e40af; /* azul */
+}
+
+section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+/* Estilos para modo noche */
+body.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer#footer,
+body.dark-mode .seccion,
+body.dark-mode section,
+body.dark-mode .card,
+body.dark-mode .entrada {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: none;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3,
+body.dark-mode .card h2,
+body.dark-mode .role {
+    color: #90caf9; /* azul claro para títulos en modo oscuro */
+}
+
+body.dark-mode .navbar a,
+body.dark-mode footer#footer ul.icons li a {
+    color: #90caf9;
+}
+
+body.dark-mode .navbar a:hover,
+body.dark-mode footer#footer ul.icons li a:hover {
+    color: #64b5f6;
+}
+
+body.dark-mode .floating-btn {
+    background: #90caf9;
+    color: #121212;
+}
+
+body.dark-mode .floating-btn:hover {
+    background: #64b5f6;
+}
+body.dark-mode .entrada p {
+    color: #e0e0e0; /* color claro para el texto del blog */
 }
